@@ -19,7 +19,7 @@ body {
   background: #fff;
 }
 
-#page {
+#page, #pagetariff {
   position: relative;
   overflow-x: hidden;
   width: 100%;
@@ -28,11 +28,11 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.offcanvas #page {
+.offcanvas #page, .offcanvas #pagetariff {
   overflow: hidden;
   position: absolute;
 }
-.offcanvas #page:after {
+.offcanvas #page:after, .offcanvas #pagetariff:after {
   -webkit-transition: 2s;
   -o-transition: 2s;
   transition: 2s;
@@ -567,7 +567,6 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-testimonial,
   #fh5co-gallery,
   #fh5co-schedule,
-  #fh5co-pricing,
   #fh5co-blog,
   #fh5co-contact,
   #fh5co-footer {
@@ -575,6 +574,9 @@ h1, h2, h3, h4, h5, h6, figure {
   }
   #fh5co-trainer {
     padding: 0 0 3em 0;
+  }
+  #fh5co-pricing {
+    padding: 0;
   }
 }
 
