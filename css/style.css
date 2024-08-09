@@ -361,6 +361,9 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   z-index: 10;
 }
+.contact h3 {
+  padding-left: 15px;
+}
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: 600px;
@@ -372,7 +375,6 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 700px;
   display: table;
   width: 100%;
-  margin-top: 100px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
@@ -547,7 +549,6 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-services,
 #fh5co-started,
 #fh5co-testimonial,
-#fh5co-trainer,
 #fh5co-gallery,
 #fh5co-schedule,
 #fh5co-pricing,
@@ -557,11 +558,13 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   clear: both;
 }
+#fh5co-trainer {
+  padding: 0 0 7em 0;
+}
 @media screen and (max-width: 768px) {
   #fh5co-services,
   #fh5co-started,
   #fh5co-testimonial,
-  #fh5co-trainer,
   #fh5co-gallery,
   #fh5co-schedule,
   #fh5co-pricing,
@@ -570,12 +573,25 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-footer {
     padding: 3em 0;
   }
+  #fh5co-trainer {
+    padding: 0 0 3em 0;
+  }
 }
 
 #fh5co-gallery {
   padding-bottom: 0;
 }
-
+.form {
+  float: left;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.control-group {
+  margin-bottom: 20px;
+  width: 400px;
+}
 .services {
   padding: 25px;
   margin-top: -10em;
@@ -779,6 +795,9 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 480px) {
   .fh5co-tabs .class-schedule li {
     width: 100%;
+  }
+  .control-group {
+    width: 350px;
   }
 }
 .fh5co-tabs .class-schedule li:first-child {
@@ -1523,7 +1542,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav-toggle {
   position: absolute;
   right: 0px;
-  top: 65px;
+  top: 25px;
   z-index: 21;
   padding: 6px 0 0 0;
   display: block;
@@ -1734,8 +1753,5 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .js .animate-box {
   opacity: 0;
-}
-.control-group {
-  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
